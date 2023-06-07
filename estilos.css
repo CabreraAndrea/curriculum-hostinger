@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background: rgba(111, 150, 168, 0.5);
+    margin: 0;
+    color: dimgray;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#header {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/*estilo navegador*/
+
+
+
+.menu-icon {
+    position: fixed;
+    display: block;
+    color: lightslategray;
+    border: 1px solid lightslategray;
+    border-radius: 3px;
+    width: 40px;
+    height: 40px;
+    line-height: 45px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+.menu {
+
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: rgb(211, 211, 211, 0.8);
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    height: 0;
+    overflow: hidden;
+    transition: height .3s linear;
+}
+
+.main-nav {
+    width: 100%;
+    position: relative;
+    z-index: 2000;
+    padding: 10px;
+}
+
+
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin: 10px;
+}
+
+nav ul li {
+    position: relative;
+    font-size: 120%;
+    display: block;
+
+}
+
+.menu__link {
+    display: block;
+    padding: 10px;
+
+}
+
+.menu__link--select {
+    background-color: lightslategray;
+
+}
+
+.menu__link:hover {
+    background-color: lightgray;
+}
+
+.mostrar {
+    height: 296px;
+}
+a {
+    color:dimgray ;
+    text-decoration: none;
+    font-weight: bold;
+ }
+ a:hover{
+    color: rgb(166, 155, 182);
+ }
+
+/*estilo del inicio*/
+.header-content {
+    position: relative;
+    margin-top: 35px;
+    background-image: url(imagenes/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:   center;
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 450px;
+}
+
+.header-content .logo {
+    height: 250px;
+    width: 250px;
+    margin-top: 10%;
+
+}
+.header-text {
+    margin-top: auto;
+}
+
+
+.title {
+    font-size: 2rem;
+    text-align: center;
+}
+.text {
+    font-size: 1.5rem;
+    line-height: 1.7;
+    margin-top: 1rem;
+    text-align: center;
+}
+/*estilo presentacion*/
+
+.secciones  {
+    position: relative;
+    margin-top: 50px;
+    
+    padding-top: 50px;
+    background-color: aliceblue;
+    width: 100%;
+    height: auto;
+}
+h3 {
+    font-size: 1.5rem;
+    line-height: 2;
+ }
+ h4 {
+    margin-top: 10%;
+    font-size: 1.1rem;
+ }
+ .container {
+    max-width: 960px;
+    margin: auto;
+    overflow: hidden;
+    padding: 4rem 1rem;
+}
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-gap: 30px;
+}
+
+/*estilo portafolio*/
+
+#portafolio {
+    position: relative;
+    margin-top: 100px;
+}
+
+.imagen {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+.grid-2 {
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    grid-gap: 30px;
+
+}
+
+/*estilo herramientas*/
+.slider {
+    width: 80vw;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+.slider .slide-track {
+    display: flex;
+    
+    animation: scroll 40s linear infinite ;
+    
+    width: calc(600px * 18);
+   
+}
+.slider .slide {
+    width: 600px;
+}
+.slider .slide img {
+    margin: 10px auto;
+    width: 100%;
+}
+@keyframes scroll {
+    0%{
+        transform: translate(0);
+    }
+    100%{
+        transform: translate(calc(-600px * 9));
+    }
+  
+}
+
+
+.text-center {
+    text-align: center;
+    margin: auto;
+}
+
+
+/*estilo contacto*/
+.contact  {
+    position: relative;
+    margin-top: 50px;
+    padding: 4rem 1rem;
+
+    
+    background-color: aliceblue;
+    width: 100%;
+}
+.contact-wrapper {
+    box-shadow: 0 0 20px 0 rgba(94, 147, 172, 0.301);
+}
+.contact-wrapper {
+    display: grid;
+    grid-template-columns:  1fr;
+}
+.contact-wrapper  * {
+    padding: .7em;
+    }
+    
+    .contact-form form {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+    }
+     .contact-form form .block {
+        grid-column: 1 / 3;
+     }
+     .contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    font-family: cursive;
+}
+.contact-form form button {
+    background: rgb(113, 135, 155);
+    border: none;
+    text-transform: uppercase;
+    padding: 1em;
+    margin-top: 1em;
+}
+.contact-form form button:hover,
+.contact-form form button:focus {
+    
+    background:gray ;
+    color: antiquewhite;
+    transition: background-color 1s ease-out;
+}
+
+.contact-info {
+    background-color: rgb(153, 168, 182);
+    padding: 0;
+    margin: 0;
+}
+.contact-info * {
+    padding: .5em;
+}
+.contact-info h4,
+.contact-info ul {
+    text-align: center;
+}
+
+.contact-info h4 {
+    font-size: 1.5em;
+}
+.contact-info ul {
+    font-size: 1.1em;
+}
+/*estilo footer*/
+.footer {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+/*diseño responsive*/
+
+@media screen and (min-width:650px) {
+
+    
+    .menu {
+        position: fixed;
+        /*margin-bottom: 60px;
+        */
+        margin-top: -60px;
+        height: auto;
+        text-align: left;
+        background: rgba(111, 150, 168, 0.9);
+    }
+    
+    .menu-icon {
+        display: none;
+        font-size: 50px;
+
+    }
+    
+    .main-nav {
+        width: 100%;
+        position: relative;
+        z-index: 2000;
+        padding:  0px;
+        margin-top: -60px;
+        
+    }  
+    nav ul li {
+        position: relative;
+        font-size: 120%;
+        display: inline-block;
+        
+    }
+   
+    .header-content {
+        position: relative;
+        margin-top: 11%;
+        
+        
+    }
+    .grid-3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 30px;
+    }
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+}
